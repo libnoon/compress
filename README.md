@@ -1,7 +1,28 @@
 compress
 ========
 
-The "ultimate" file compressor, even capable of infinite compression (0-length files)
+The "ultimate" file compressor, even capable of infinite compression
+(0-length files).
+
+How to use
+==========
+
+This program compresses and uncompresses files.  Its compression ratio
+is very near to no compression (a fraction of a bit), but it ALWAYS
+compresses, so you can ALWAYS get 0-length compressed files if you
+compress a sufficient number of times.
+
+Beware: this program will modify your file in-place!  Make a backup!
+
+Experiment with very small files first (1 or 2 bytes).
+Use repeatedly (billions of times or even more).
+Usage: compress [-v] -c FILENAME       compress once
+       compress      -C 5 FILENAME     compress 5 times
+       compress      -D 5 FILENAME     decompress 5 times
+       compress      -d FILENAME       decompress once
+Options:
+ -v  debug mode.
+
 
 Licence
 =======
