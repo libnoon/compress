@@ -5,7 +5,7 @@ Makefile
 /config.h
 /config.status
 /stamp-h1
-/compress
+/ulcompress
 /INSTALL
 /aclocal.m4
 /autom4te.cache/

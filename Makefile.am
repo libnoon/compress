@@ -1,2 +1,2 @@
-bin_PROGRAMS = compress
-compress_SOURCES = compress.c
+bin_PROGRAMS = ulcompress
+ulcompress_SOURCES = ulcompress.c

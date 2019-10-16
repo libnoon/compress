@@ -4,7 +4,7 @@
 AC_PREREQ([2.69])
 AC_INIT([ultimate-compress], [1.0], [libnoon@gmail.com])
 AM_INIT_AUTOMAKE
-AC_CONFIG_SRCDIR([compress.c])
+AC_CONFIG_SRCDIR([ulcompress.c])
 AC_CONFIG_HEADERS([config.h])
 
 # Checks for programs.

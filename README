@@ -1,5 +1,5 @@
-compress
-========
+ulcompress
+==========
 
 The "ultimate" file compressor, even capable of infinite compression
 (0-length files).
@@ -17,21 +17,21 @@ Compress a lot of times (billions of times or even more).
 
 Beware: this program will modify your file in-place!  Make a backup!
 
-Usage: compress [-v] -c FILENAME       compress once
-       compress      -C 5 FILENAME     compress 5 times
-       compress      -D 5 FILENAME     decompress 5 times
-       compress      -d FILENAME       decompress once
+Usage: ulcompress [-v] -c FILENAME       compress once
+       ulcompress      -C 5 FILENAME     compress 5 times
+       ulcompress      -D 5 FILENAME     decompress 5 times
+       ulcompress      -d FILENAME       decompress once
 
 Example session:
 
 $ echo Hi > file
-$ compress -C 9999999 file
+$ ulcompress -C 9999999 file
 Cannot compress that much.
 Hint: compressing 748105 time(s) will make a zero-length file.
-$ compress -C 748105 file
+$ ulcompress -C 748105 file
 $ ls -l file
 -rw-r--r-- 1 noon noon 0 Oct 16 20:49 file
-$ ./compress -D 748105 file
+$ ulcompress -D 748105 file
 $ cat file
 Hi
 $
