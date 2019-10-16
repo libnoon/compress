@@ -1,3 +1,2 @@
 #!/bin/sh
-automake --add-missing
-autoreconf
+autoreconf --install --symlink
