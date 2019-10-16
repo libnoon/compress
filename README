@@ -8,21 +8,33 @@ How to use
 ==========
 
 This program compresses and uncompresses files.  Its compression ratio
-is very near to no compression (a fraction of a bit), but it ALWAYS
-compresses, so you can ALWAYS get 0-length compressed files if you
-compress a sufficient number of times.
-
-Beware: this program will modify your file in-place!  Make a backup!
+is very near to no compression (a fraction of a bit in average), but
+it ALWAYS compresses, so you can ALWAYS get 0-length compressed files
+if you compress a sufficient number of times.
 
 Experiment with very small files first (1 or 2 bytes).
-Use repeatedly (billions of times or even more).
+Compress a lot of times (billions of times or even more).
+
+Beware: this program will modify your file in-place!  Make a backup!
 
 Usage: compress [-v] -c FILENAME       compress once
        compress      -C 5 FILENAME     compress 5 times
        compress      -D 5 FILENAME     decompress 5 times
        compress      -d FILENAME       decompress once
-Options:
- -v  debug mode.
+
+Example session:
+
+$ echo Hi > file
+$ compress -C 9999999 file
+Cannot compress that much.
+Hint: compressing 748105 time(s) will make a zero-length file.
+$ compress -C 748105 file
+$ ls -l file
+-rw-r--r-- 1 noon noon 0 Oct 16 20:49 file
+$ ./compress -D 748105 file
+$ cat file
+Hi
+$
 
 Licence
 =======
