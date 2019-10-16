@@ -1,4 +1,11 @@
 *.in
+*.o
+*.log
+Makefile
+/config.h
+/config.status
+/stamp-h1
+/compress
 /INSTALL
 /aclocal.m4
 /autom4te.cache/
@@ -7,3 +14,4 @@
 /depcomp
 /install-sh
 /missing
+/.deps/
