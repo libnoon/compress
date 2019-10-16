@@ -16,13 +16,13 @@ Beware: this program will modify your file in-place!  Make a backup!
 
 Experiment with very small files first (1 or 2 bytes).
 Use repeatedly (billions of times or even more).
+
 Usage: compress [-v] -c FILENAME       compress once
        compress      -C 5 FILENAME     compress 5 times
        compress      -D 5 FILENAME     decompress 5 times
        compress      -d FILENAME       decompress once
 Options:
  -v  debug mode.
-
 
 Licence
 =======
