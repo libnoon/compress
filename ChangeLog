@@ -1,3 +1,7 @@
 2019-10-16  Fabrice Bauzac-Stehly  <noon@mykolab.com>
 
-	*  Use autoconf and automake.
+	* ulcompress.c: document how it works.
+
+	* Use autoconf and automake.
+
+	* README: more documentation.
